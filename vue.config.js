@@ -3,7 +3,7 @@ const getAssetPath = require('@vue/cli-service/lib/util/getAssetPath')
 const { name, version, description } = require('./package.json')
 process.env.VUE_APP_NAME = name
 
-const target = 'http://10.254.251.192'
+const target = ''
 
 const inlineLimit = 1024
 
