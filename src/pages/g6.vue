@@ -1,11 +1,9 @@
 <template lang="pug">
-  #app
-    router-view
+  page g6
 </template>
 
 <script>
 export default {
-  name: 'app'
+  name: 'g6'
 }
 </script>
-

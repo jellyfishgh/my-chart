@@ -1,11 +1,10 @@
 <template lang="pug">
-  #app
-    router-view
+  page frappe-chart
 </template>
 
 <script>
 export default {
-  name: 'app'
+  name: 'frappe-chart'
 }
 </script>
 

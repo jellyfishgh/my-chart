@@ -1,11 +1,9 @@
 <template lang="pug">
-  #app
-    router-view
+  page fa-icon
 </template>
 
 <script>
 export default {
-  name: 'app'
+  name: 'fa-icon'
 }
 </script>
-

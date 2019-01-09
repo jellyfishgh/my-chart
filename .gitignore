@@ -19,3 +19,7 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+
+# built config
+src/router/pages.js
+src/plugins/components.js

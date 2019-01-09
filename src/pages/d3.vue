@@ -1,11 +1,9 @@
 <template lang="pug">
-  #app
-    router-view
+  page d3
 </template>
 
 <script>
 export default {
-  name: 'app'
+  name: 'd3'
 }
 </script>
-

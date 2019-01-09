@@ -1,11 +1,9 @@
 <template lang="pug">
-  #app
-    router-view
+  page echarts
 </template>
 
 <script>
 export default {
-  name: 'app'
+  name: 'echarts'
 }
 </script>
-
