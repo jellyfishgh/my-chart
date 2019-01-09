@@ -3,11 +3,11 @@ const getAssetPath = require('@vue/cli-service/lib/util/getAssetPath')
 const { name, version, description } = require('./package.json')
 process.env.VUE_APP_NAME = name
 
-const target = ''
+const target = 'origin'
 
 const inlineLimit = 1024
 
-const proxy = ['mywbllogin', 'mywbl', 'yhtywbl'].reduce(
+const proxy = ['api'].reduce(
   (x, y) => ({
     ...x,
     [`/${y}`]: {
