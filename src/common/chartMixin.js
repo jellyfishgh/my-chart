@@ -4,6 +4,7 @@ export default {
   data() {
     return {
       id: 'chart',
+      url: '/chart.json',
       chart: null
     }
   },

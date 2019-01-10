@@ -12,7 +12,6 @@ export default {
   data() {
     return {
       data: [],
-      url: '/chart.json',
       option: {
         xAxis: {
           type: 'category',
