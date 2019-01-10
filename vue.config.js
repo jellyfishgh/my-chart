@@ -1,5 +1,3 @@
-const getAssetPath = require('@vue/cli-service/lib/util/getAssetPath')
-
 const { name, version, description } = require('./package.json')
 process.env.VUE_APP_NAME = name
 
@@ -27,7 +25,7 @@ const devServer = {
   proxy
 }
 
-const publicPath = process.env.NODE_ENV === 'development' ? '/' : `/${name}/`
+const publicPath = `/${name}/`
 const outputDir = `dist/${name}`
 const assetsDir = process.env.VUE_APP_ASSETS_DIR
 const filenameHashing = true
@@ -61,10 +59,9 @@ module.exports = {
       .loader('url-loader')
       .options({
         limit: inlineLimit,
-        name: getAssetPath(
-          { publicPath, assetsDir },
-          `img/[name]${filenameHashing ? '.[hash:8]' : ''}.[ext]`
-        )
+        name: `${assetsDir}/img/[name]${
+          filenameHashing ? '.[hash:8]' : ''
+        }.[ext]`
       })
   },
   configureWebpack: config => {

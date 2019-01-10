@@ -7,7 +7,7 @@
 import at from 'eva-icons/fill/svg/at.svg'
 import activity from 'eva-icons/fill/svg/activity.svg'
 export default {
-  name: 'eva-icon',
+  name: 'eva',
   data() {
     return {
       img: {
@@ -18,5 +18,3 @@ export default {
   }
 }
 </script>
-
-
