@@ -21,7 +21,7 @@ export default {
     },
     update() {
       if (!this.cart) this.init()
-      this.draw()
+      this.draw && this.draw()
     }
   },
   watch: {
