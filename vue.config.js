@@ -1,5 +1,15 @@
+const qs = require('qs')
+
 const { name, version, description } = require('./package.json')
 process.env.VUE_APP_NAME = name
+
+const v = '1.4.8'
+const plugin = 'Map3D'
+const key = '2512e63c29a3be31d0719dd76a2e3d35'
+process.env.VUE_APP_AMAP_API = `https://webapi.amap.com/maps${qs.stringify(
+  { v, plugin, key },
+  { addQueryPrefix: true }
+)}`
 
 const target = 'origin'
 
