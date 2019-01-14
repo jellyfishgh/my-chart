@@ -13,7 +13,7 @@ export default {
   data() {
     return {
       data: {},
-      url: '/investment.json'
+      url: '/static/investment.json'
     }
   },
   methods: {
