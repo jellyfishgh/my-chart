@@ -13,7 +13,9 @@ export default {
   data() {
     return {
       data: {},
-      url: '/static/investment.json'
+      url: `${process.env.BASE_URL}${
+        process.env.VUE_APP_ASSETS_DIR
+      }/investment.json`
     }
   },
   methods: {

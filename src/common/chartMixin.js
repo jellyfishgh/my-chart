@@ -4,7 +4,9 @@ export default {
   data() {
     return {
       id: 'chart',
-      url: '/static/chart.json',
+      url: `${process.env.BASE_URL}${
+        process.env.VUE_APP_ASSETS_DIR
+      }/chart.json`,
       chart: null
     }
   },
