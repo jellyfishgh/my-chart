@@ -1,9 +1,4 @@
-// import components from './components'
-
-const components = require
-  .context('@/components/', false, /.vue$/)
-  .keys()
-  .map(key => key.replace(/.vue$/, '').slice(2))
+import components from '@/plugins/components'
 
 let installed
 const install = Vue => {

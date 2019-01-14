@@ -22,4 +22,3 @@ yarn-error.log*
 
 # built config
 src/router/pages.js
-src/plugins/components.js

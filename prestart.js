@@ -2,15 +2,11 @@ const fs = require('fs')
 const path = require('path')
 const glob = require('glob')
 
+const { getFileName } = require('./src/utils/file')
+
 const getAbsPath = dir => path.resolve(__dirname, `src/${dir}`)
 
-// const getFiles = src =>
-//   fs.readdirSync(getAbsPath(src)).map(file => file.slice(0, file.indexOf('.')))
-
-const getFiles = src =>
-  glob
-    .sync(`src/${src}/*`)
-    .map(file => file.slice(file.lastIndexOf('/') + 1, file.lastIndexOf('.')))
+const getFiles = src => glob.sync(`src/${src}/*`).map(getFileName)
 
 const wCfg = (src, dist, fileName) => {
   const tplStr = `export default ['${getFiles(src).join('\', \'')}']`
@@ -19,4 +15,3 @@ const wCfg = (src, dist, fileName) => {
 }
 
 wCfg('pages', 'router', 'pages.js')
-wCfg('components', 'plugins', 'components.js')
