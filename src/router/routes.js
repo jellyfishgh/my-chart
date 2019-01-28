@@ -7,9 +7,10 @@ const routes = pages.map(name => ({
   component: () => import(`@/pages/${name}`)
 }))
 
+
 routes.push({
   path: '*',
-  redirect: routes[0].path
+  redirect: '/index'
 })
 
 export default routes
