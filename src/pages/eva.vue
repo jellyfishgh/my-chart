@@ -1,6 +1,6 @@
 <template lang="pug">
   page
-    img(v-for='(value,key) of img' :key='key' :alt='key' :src='value')
+    img(v-for='(value,key) of img' :key='`img_${key}`' :alt='key' :src='value')
 </template>
 
 <script>
