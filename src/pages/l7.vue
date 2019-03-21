@@ -4,7 +4,7 @@
 
 <script>
 const turf = require('@turf/turf')
-import { Scene } from '@antv/l7/dist/l7.min' // @1.1.1 bug: can not import directly
+import { Scene } from '@antv/l7'
 import chartMixin from '@/common/chartMixin'
 
 export default {

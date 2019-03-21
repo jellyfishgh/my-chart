@@ -18,3 +18,10 @@ export default {
   }
 }
 </script>
+
+<style lang="less" scoped>
+img {
+  width: 48px;
+  height: 48px;
+}
+</style>
