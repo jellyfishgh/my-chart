@@ -1,6 +1,8 @@
 <template lang="pug">
   page
-    svg-icon(v-for='(icon,index) of icons' :key='index' :icon='icon' color='red')
+    div(v-for='(type,i) of types' :key='i')
+      div {{type}}
+      svg-icon(v-for='(icon,id) of icons' :key='id' :icon='icon' :type='type' color='red' :id='id')
 </template>
 
 <script>
@@ -9,10 +11,14 @@ export default {
   name: 'icon',
   data() {
     return {
-      icons: [
-        require('@fortawesome/fontawesome-free/svgs/brands/500px.svg'),
-        AddressBook
-      ]
+      types: ['html', 'embed', 'object', 'iframe', 'svg'],
+      icons: {
+        '500px': require('@fortawesome/fontawesome-free/svgs/brands/500px.svg'),
+        'address-book': AddressBook,
+        'safari-pinned-tab': `${
+          process.env.BASE_URL
+        }static/img/icons/safari-pinned-tab.svg`
+      }
     }
   }
 }
