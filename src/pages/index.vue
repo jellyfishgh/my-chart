@@ -1,6 +1,6 @@
 <template lang="pug">
   page
-    div(v-for='(page,index) of pages' :key='index')
+    div(v-for='(page, index) of pages' :key='index')
       router-link(:to='`/${page}`') {{page}}
 </template>
 

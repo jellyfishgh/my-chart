@@ -9,9 +9,9 @@ export default {
   data() {
     return {
       href: `/${process.env.VUE_APP_NAME}`,
-      src: `/${
+      src: `${
         process.env.NODE_ENV === 'development' ? '' : process.env.VUE_APP_NAME
-      }${process.env.VUE_APP_ASSETS_DIR}/img/icons/apple-touch-icon.png`
+      }/${process.env.VUE_APP_ASSETS_DIR}/img/icons/apple-touch-icon.png`
     }
   }
 }

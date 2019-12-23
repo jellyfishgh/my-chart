@@ -7,12 +7,14 @@
 
 <script>
 import AddressBook from '@fortawesome/fontawesome-free/svgs/regular/address-book.svg'
+import at from 'eva-icons/fill/svg/at.svg'
 export default {
   name: 'icon',
   data() {
     return {
       types: ['html', 'embed', 'object', 'iframe', 'svg'],
       icons: {
+        at,
         '500px': require('@fortawesome/fontawesome-free/svgs/brands/500px.svg'),
         'address-book': AddressBook,
         'safari-pinned-tab': `${
